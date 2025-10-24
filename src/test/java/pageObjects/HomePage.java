@@ -23,6 +23,9 @@ public class HomePage extends BasePage {
 	@FindBy(xpath="//a[normalize-space()='Login']")
 	WebElement lnkLogin;
 	
+	@FindBy(xpath="//div[@class='form-group']//a[normalize-space()='Forgotten Password']")
+	WebElement lnktxtForgotyenPassword;
+	
 	public void clickMyAccount()
 	{
 		lnkMyaccount.click();
@@ -37,5 +40,10 @@ public class HomePage extends BasePage {
 	public void clickLogin()
 	{
 		lnkLogin.click();
+	}
+	
+	public void clickForgottenPassword()
+	{
+		lnktxtForgotyenPassword.click();
 	}
 }
